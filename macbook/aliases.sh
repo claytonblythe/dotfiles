@@ -12,7 +12,8 @@ alias mem='top -o mem'
 alias cpu='top -o cpu'
 alias proj='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects'
 alias col='cd ~/Collections'
-alias dp='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/deeppython'
+alias dp='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython'
+alias dotfiles='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/dotfiles'
 
 ## Fun ##
 alias sendweather='/usr/local/bin/python3 /users/claytonblythe/Desktop/Mega/python_projects/web_scraping/Wunderground_scrape_text.py'
@@ -48,6 +49,7 @@ alias rtv='rtv --monochrome --ascii'
 
 ## sshing ##
 alias pi='ssh pi@10.1.10.42'
+alias kodi='ssh root@10.1.10.42'
 alias mac='ssh claytonblythe@127.0.0.1'
 alias sftphd='sftp cblythe2@hpchd1e.hpc.ford.com'
 alias elmo='ssh cblythe2@elmo.rotundact.ford.com'
