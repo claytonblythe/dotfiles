@@ -43,15 +43,10 @@ alias gaa='git add --all'
 alias push='git push'
 alias pull='git pull'
 alias gs='git status'
-<<<<<<< HEAD
 clone () { git clone https://github.com/claytonblythe/$1; }
+gcp () { git add --all && git commit -m "$1" && git push origin master; }
 
 alias notebook='jupyter notebook'
-=======
-clone() { git clone https://github.com/claytonblythe/$1 ; }
-
-alias jn='jupyter notebook'
->>>>>>> 5b9b8c7e4bac407faf3a5fd4ebf63985e8fd2d84
 alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 alias rtv='rtv --monochrome --ascii'
 
