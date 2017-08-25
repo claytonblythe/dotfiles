@@ -38,6 +38,7 @@ alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && ql
 alias new_project='/users/claytonblythe/Desktop/Mega/Data_Science/projects/version_control/scripts/new_project.bash'
 alias v='vim'
 alias l='ls'
+alias la='ls -lAh'
 alias gp='git push origin master'
 alias gaa='git add --all'
 alias push='git push'
