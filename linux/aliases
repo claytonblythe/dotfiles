@@ -40,7 +40,7 @@ alias pull='git pull'
 alias gs='git status'
 alias notebook='jupyter notebook'
 alias rtv='rtv --monochrome --ascii'
-
+clone() { git clone https://github.com/claytonblythe/$1 ; } 
 ## sshing ##
 alias pi='ssh pi@10.1.10.42'
 alias kodi='ssh root@10.1.10.42'
