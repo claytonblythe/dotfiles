@@ -17,6 +17,7 @@ alias proj='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects'
 alias col='cd ~/Collections'
 alias dp='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython'
 alias dotfiles='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/dotfiles'
+alias el='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/elegantdp'
 
 ## Fun ##
 alias sendweather='/usr/local/bin/python3 /users/claytonblythe/Desktop/Mega/python_projects/web_scraping/Wunderground_scrape_text.py'
@@ -96,10 +97,6 @@ wkill ()
 kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')  
 } &> /dev/null
 
-serve ()
-{
-kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')&
-(pelican content && cd output && python -m pelican.server & open http://localhost:8000)&
-}
+alias serve='wkill && dp && make devserver & sleep .8 && open http://localhost:8000'
 
-alias dpupdate='aws s3 sync /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython/output s3://deepython.com/'
+alias dpupdate='aws s3 sync /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
