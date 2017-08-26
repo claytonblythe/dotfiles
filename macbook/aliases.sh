@@ -101,3 +101,5 @@ serve ()
 kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')&
 (pelican content && cd output && python -m pelican.server & open http://localhost:8000)&
 }
+
+alias dpupdate='aws s3 sync /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython/output s3://deepython.com/'
