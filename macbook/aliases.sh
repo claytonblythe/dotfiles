@@ -4,6 +4,9 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias ll='ls -l -h'
+mkcd () { mkdir -p "$1" && cd "$1"; }
+alias x='exit'
 alias c='clear'
 alias h='history'
 alias j='jobs -l'
@@ -33,6 +36,7 @@ pywu forecast condition &&
 printf "Predicted rain (in): " &&
 pywu forecast rain_in'
 alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && qlmanage -p newly_made.gif & '
+alias myip='curl http://ifconfig.me/ip'
 
 ## Github ##
 alias new_project='/users/claytonblythe/Desktop/Mega/Data_Science/projects/version_control/scripts/new_project.bash'
@@ -40,6 +44,7 @@ alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
 alias gp='git push origin master'
+alias gl='git log -n 10 --graph --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias gaa='git add --all'
 alias push='git push'
 alias pull='git pull'
@@ -86,6 +91,11 @@ dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 ## Blogging Aliases ##
+wkill () 
+{
+kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')  
+} &> /dev/null
+
 serve ()
 {
 kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')&
