@@ -59,6 +59,7 @@ alias rtv='rtv --monochrome --ascii'
 
 ## sshing ##
 alias pi='ssh pi@10.1.10.42'
+alias pi3='ssh root@10.1.10.80'
 alias kodi='ssh root@10.1.10.42'
 alias mac='ssh claytonblythe@127.0.0.1'
 alias sftphd='sftp cblythe2@hpchd1e.hpc.ford.com'
@@ -69,6 +70,7 @@ alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
 alias v='vim $1'
 alias vimal='vim ~/.aliases.sh'
 alias please='sudo $(history -p !!)'
+alias cpal='dotfiles && cp ~/.aliases.sh macbook/aliases.sh'
 
 ## Docker Aliases ##
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
@@ -98,5 +100,6 @@ kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
 } &> /dev/null
 
 alias serve='wkill && dp && make devserver & sleep .8 && open http://localhost:8000'
-
+alias blog='dp && cd content && open -a Atom *.md'
+alias sourceal='source ~/.aliases.sh'
 alias dpupdate='aws s3 sync /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
