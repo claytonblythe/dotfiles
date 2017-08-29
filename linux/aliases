@@ -12,6 +12,9 @@ alias j='jobs -l'
 alias b='cd -'
 alias mem='top -o mem'
 alias cpu='top -o cpu'
+alias df='df -h'
+alias sl='ls'
+alias LS='ls'
 
 ## Fun ##
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
@@ -30,6 +33,9 @@ pywu forecast condition &&
 printf "Predicted rain (in): " &&
 pywu forecast rain_in'
 
+alias myip='curl http://ifconfig.me/ip'
+alias rtv='rtv --monochrome --ascii'
+
 ## Github ##
 alias v='vim'
 alias l='ls'
@@ -37,22 +43,31 @@ alias gp='git push origin master'
 alias gaa='git add --all'
 alias push='git push'
 alias pull='git pull'
+alias lastdiff='git diff --cached HEAD^'
+alias gls='gls git log -p -n 3'
+alias gll="git log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(cyan)<%an>' --no-merges -n 20"
 alias gs='git status'
+gcp () { git add --all && git commit -m "$1" && git push origin master; }
+
 alias notebook='jupyter notebook'
 alias rtv='rtv --monochrome --ascii'
 clone() { git clone https://github.com/claytonblythe/$1 ; } 
 ## sshing ##
 alias pi='ssh pi@10.1.10.42'
+alias pi3='ssh root@10.1.10.80'
 alias kodi='ssh root@10.1.10.42'
 alias mac='ssh claytonblythe@127.0.0.1'
-alias sftphd='sftp cblythe2@hpchd1e.hpc.ford.com'
 alias elmo='ssh cblythe2@elmo.rotundact.ford.com'
 alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
+alias hd='ssh cblythe2@hpchdp2e.hpc.ford.com'
+alias sftphd='sftp cblythe2@hpchdp2e.hpc.ford.com'
 
 ## File Editing / Misc Commands ##
 alias v='vim $1'
-alias vimal='vim ~/.aliases.sh'
+alias vimal='vim ~/.aliases'
 alias please='sudo $(history -p !!)'
+alias sourceal='source ~/.aliases'
+alias python='python3'
 
 ## Docker Aliases ##
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
