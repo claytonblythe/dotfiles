@@ -51,6 +51,7 @@ alias gls='gls git log -p -n 3'
 alias gll="git log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(cyan)<%an>' --no-merges -n 20"
 alias gs='git status'
 gcp () { git add --all && git commit -m "$1" && git push origin master; }
+alias new_project='~/github/version_control/scripts/new_project.sh'
 
 alias notebook='jupyter notebook'
 alias rtv='rtv --monochrome --ascii'
