@@ -15,7 +15,7 @@ alias cpu='top -o cpu'
 alias df='df -h'
 alias sl='ls'
 alias LS='ls'
-
+alias dotfiles='cd ~/github/dotfiles'
 ## Fun ##
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
 printf "Dearborn,Michigan\n" &&
@@ -65,10 +65,9 @@ alias sftphd='sftp cblythe2@hpchdp2e.hpc.ford.com'
 ## File Editing / Misc Commands ##
 alias v='vim $1'
 alias vimal='vim ~/.aliases'
+alias cpal='dotfiles && cp ~/.aliases linux/aliases'
 alias please='sudo $(history -p !!)'
 alias sourceal='source ~/.aliases'
-alias python='python3'
-
 ## Docker Aliases ##
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dbu() { docker build -t=$1 .; }
