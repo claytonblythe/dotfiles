@@ -16,6 +16,8 @@ alias df='df -h'
 alias sl='ls'
 alias LS='ls'
 alias dotfiles='cd ~/github/dotfiles'
+alias g='cd ~/github'
+
 ## Fun ##
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
 printf "Dearborn,Michigan\n" &&
