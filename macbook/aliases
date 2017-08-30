@@ -13,14 +13,12 @@ alias j='jobs -l'
 alias b='cd -'
 alias mem='top -o mem'
 alias cpu='top -o cpu'
-alias proj='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects'
-alias col='cd ~/Collections'
-alias dp='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython'
-alias dotfiles='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/dotfiles'
-alias el='cd /users/claytonblythe/Desktop/Mega/Data_Science/projects/elegantdp'
+alias g='cd ~/github'
+alias dp='cd ~/github/deepython'
+alias dotfiles='cd ~/github/dotfiles'
+alias el='cd ~/github/elegantdp'
 
 ## Fun ##
-alias sendweather='/usr/local/bin/python3 /users/claytonblythe/Desktop/Mega/python_projects/web_scraping/Wunderground_scrape_text.py'
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
 printf "Dearborn,Michigan\n" &&
 printf "" &&
@@ -68,9 +66,9 @@ alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
 
 ## File Editing / Misc Commands ##
 alias v='vim $1'
-alias vimal='vim ~/.aliases.sh'
+alias vimal='vim ~/.aliases'
 alias please='sudo $(history -p !!)'
-alias cpal='dotfiles && cp ~/.aliases.sh macbook/aliases.sh'
+alias cpal='dotfiles && cp ~/.aliases macbook/aliases'
 
 ## Docker Aliases ##
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
@@ -94,12 +92,13 @@ dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 ## Blogging Aliases ##
-wkill () 
+wkill ()
 {
-kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')  
+kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
 } &> /dev/null
 
 alias serve='wkill && dp && make devserver & sleep .8 && open http://localhost:8000'
 alias blog='dp && cd content && open -a Atom *.md'
 alias sourceal='source ~/.aliases.sh'
 alias dpupdate='aws s3 sync /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
+alias python=python3
