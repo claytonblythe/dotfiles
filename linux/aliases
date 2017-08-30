@@ -17,6 +17,7 @@ alias sl='ls'
 alias LS='ls'
 alias dotfiles='cd ~/github/dotfiles'
 alias g='cd ~/github'
+alias dp='cd ~/github/deepython'
 
 ## Fun ##
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
@@ -88,6 +89,9 @@ alias imgs='docker images'
 alias ct='docker ps -a'
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dipl='docker inspect "docker ps -l -q"'
+
+dsa () { docker start $1 && docker attach $1 ; }
+
 dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
