@@ -100,5 +100,5 @@ kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
 alias serve='wkill && dp && make devserver & sleep .8 && open http://localhost:8000'
 alias blog='dp && cd content && open -a Atom *.md'
 alias sourceal='source ~/.aliases'
-alias dpupdate='aws s3 sync /users/claytonblythe/Desktop/Mega/Data_Science/projects/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
+alias dpupdate='aws s3 sync /Users/claytonblythe/github/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
 alias python=python3
