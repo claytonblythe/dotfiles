@@ -17,7 +17,7 @@ alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles'
 alias el='cd ~/github/elegantdp'
-alias dwn='cd ~/Downloads'
+alias dl='cd ~/Downloads'
 ## Fun ##
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
 printf "Dearborn,Michigan\n" &&
