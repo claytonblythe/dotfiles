@@ -38,7 +38,7 @@ alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && ql
 alias myip='curl http://ifconfig.me/ip'
 
 ## Github ##
-alias new_project='/Users/claytonblythe/github/version_control/scripts/new_project.sh'
+alias newRepo='/Users/claytonblythe/github/version_control/scripts/newRepo.sh'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
