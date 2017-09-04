@@ -83,7 +83,6 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 alias di='docker images'
 alias dpa='docker ps -a'
 alias dps='docker ps'
-alias dl='docker ps -l -q'
 alias dka='docker rm $(docker ps -a -q)'
 alias imgs='docker images'
 alias ct='docker ps -a'
