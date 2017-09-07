@@ -5,6 +5,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ll='ls -l -h'
+alias lt='ls -At1 && echo "------Oldest--"'
+alias ltr='ls -Art1 && echo "------Newest--"'
 mkcd () { mkdir -p "$1" && cd "$1"; }
 alias x='exit'
 alias c='clear'
@@ -13,9 +15,15 @@ alias j='jobs -l'
 alias b='cd -'
 alias mem='top -o mem'
 alias cpu='top -o cpu'
+alias mytop='top -U $(whoami)'
+mcd() { mkdir -p "$1"; cd "$1"; } 
+cls() { cd "$1"; ls; }
+backup() { cp "$1"{,.bak}; }
+alias ps?='ps aux | grep'
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles'
+alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
 alias dl='cd ~/Downloads'
 ## Fun ##
@@ -37,6 +45,7 @@ pywu forecast rain_in'
 alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && qlmanage -p newly_made.gif & '
 alias myip='curl http://ifconfig.me/ip'
 alias wifi='speedtest-cli --simple'
+alias busy='cat /dev/urandom | hexdump -C | grep "ca fe"'
 
 ## Github ##
 alias newRepo='~/github/version_control/scripts/newRepo.sh'
@@ -98,6 +107,7 @@ kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
 } &> /dev/null
 
 alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && open http://localhost:8000'
+alias pyserve='python -m SimpleHTTPServer'
 alias blog='dp && cd content && open -a Atom *.md'
 alias sourceal='source ~/.aliases'
 alias dpupdate='aws s3 sync ~/github/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'

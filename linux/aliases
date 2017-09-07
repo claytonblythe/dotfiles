@@ -62,8 +62,7 @@ alias gll="git log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(cyan)<%an>' --no-
 alias gs='git status'
 gcp () { git add --all && git commit -m "$1" && git push origin master; }
 alias newRepo='~/github/version_control/scripts/newRepo.sh'
-
-alias notebook='jupyter notebook'
+alias jn='jupyter notebook'
 alias rtv='rtv --monochrome --ascii'
 clone() { git clone https://github.com/claytonblythe/$1 ; } 
 ## sshing ##
