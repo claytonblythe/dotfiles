@@ -39,7 +39,7 @@ alias myip='curl http://ifconfig.me/ip'
 alias wifi='speedtest-cli --simple'
 
 ## Github ##
-alias newRepo='/Users/claytonblythe/github/version_control/scripts/newRepo.sh'
+alias newRepo='~/github/version_control/scripts/newRepo.sh'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
@@ -97,8 +97,8 @@ wkill ()
 kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
 } &> /dev/null
 
-alias serve='wkill & cd /Users/claytonblythe/github/deepython && make devserver & sleep .8 && open http://localhost:8000'
+alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && open http://localhost:8000'
 alias blog='dp && cd content && open -a Atom *.md'
 alias sourceal='source ~/.aliases'
-alias dpupdate='aws s3 sync /Users/claytonblythe/github/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
+alias dpupdate='aws s3 sync ~/github/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
 alias python=python3
