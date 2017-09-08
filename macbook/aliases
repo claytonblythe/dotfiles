@@ -67,6 +67,7 @@ pywu forecast rain_in'
 alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && qlmanage -p newly_made.gif & '
 alias busy='cat /dev/urandom | hexdump -C | grep "ca fe"'
 alias rtv='rtv --monochrome --ascii'
+alias screenfetch='screenfetch -E'
 
 ## Github ##
 alias newRepo='~/github/version_control/scripts/newRepo.sh'
