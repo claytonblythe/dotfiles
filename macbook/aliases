@@ -120,4 +120,4 @@ kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
 alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && open http://localhost:8000'
 alias pyserve='python -m SimpleHTTPServer'
 alias blog='dp && cd content && open -a Atom *.md'
-alias dpupdate='aws s3 sync ~/github/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
+alias dpupdate='cd ~/github/deepython && make devserver & sleep 1.333 && aws s3 sync ~/github/deepython/output s3://deepython.com/ && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
