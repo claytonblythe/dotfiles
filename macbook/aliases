@@ -74,6 +74,8 @@ alias linkedin='open https://www.linkedin.com/feed/'
 alias economist='open https://www.economist.com/printedition/'
 alias reddit='open https://www.reddit.com/'
 alias deepython.com='open https://deepython.com.s3-website.us-east-2.amazonaws.com'
+alias news='open https://news.google.com/news/?ned=us&hl=en'
+alias github='open https://github.com/claytonblythe'
 
 ## Github ##
 alias newRepo='~/github/version_control/scripts/newRepo.sh'
