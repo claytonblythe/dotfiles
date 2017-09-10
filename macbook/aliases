@@ -69,6 +69,7 @@ alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && ql
 alias busy='cat /dev/urandom | hexdump -C | grep "ca fe"'
 alias rtv='rtv --monochrome --ascii'
 alias screenfetch='screenfetch -E'
+alias mint='open https://mint.intuit.com/overview.event'
 
 ## Github ##
 alias newRepo='~/github/version_control/scripts/newRepo.sh'
