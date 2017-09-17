@@ -98,6 +98,11 @@ alias mac='ssh claytonblythe@68.40.128.255'
 alias sftphd='sftp cblythe2@hpchd1e.hpc.ford.com'
 alias elmo='ssh cblythe2@elmo.rotundact.ford.com'
 alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
+alias oscar='ssh cblythe2@oscar.rotundact.ford.com'
+alias sftposcar='sftp cblythe2@oscar.rotundact.ford.com'
+alias kermit='ssh cblythe2@19.48.13.198'
+alias sftpkermit='sftp cblythe2@19.48.13.198'
+alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
 
 ## Docker Aliases ##
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
