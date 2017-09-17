@@ -91,7 +91,7 @@ toScript () { jupyter nbconvert --to script "$1"; }
 alias jn='jupyter notebook'
 
 ## sshing ##
-alias pi='ssh pi@10.1.10.42'
+alias pi='ssh -p 44 pi@68.40.128.55'
 alias pi3='ssh root@10.1.10.80'
 alias kodi='ssh root@10.1.10.42'
 alias mac='ssh claytonblythe@68.40.128.255'
