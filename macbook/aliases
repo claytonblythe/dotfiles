@@ -52,21 +52,8 @@ alias wifi='speedtest-cli --simple'
 alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ##
-alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
-printf "Dearborn,Michigan\n" &&
-printf "" &&
-printf $(date | cut -c 1,2,3) && printf " " && pywu forecast shortdate &&
-printf "Current: " &&
-pywu current condition &&
-printf "Feels like: " &&
-pywu current feelslike_f &&
-printf "High: " &&
-pywu forecast high_f &&
-printf "Low: " &&
-pywu forecast low_f &&
-pywu forecast condition &&
-printf "Predicted rain (in): " &&
-pywu forecast rain_in'
+alias weather='/home/claytonblythe/github/scripts/weather.sh'
+alias weather_tomorrow='/home/claytonblythe/github/scripts/weather_tomorrow.sh'
 alias make_gif='convert -delay 5  -loop 0 *.png newly_made.gif && rm *.png && qlmanage -p newly_made.gif & '
 alias busy='cat /dev/urandom | hexdump -C | grep "ca fe"'
 alias rtv='rtv --monochrome --ascii'
