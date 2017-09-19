@@ -20,6 +20,7 @@ backup() { cp "$1"{,.bak}; }
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles/macbook'
+alias dockerfiles='cd ~/github/dockerfiles'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
 alias dl='cd ~/Downloads'
@@ -30,7 +31,7 @@ alias v='vim $1'
 alias vimal='vim ~/.aliases'
 alias vdp='dp && cd .. && vim pelicanconf.py'
 alias please='sudo $(history -p !!)'
-alias cpal='dotfiles && cp ~/.aliases macbook/aliases'
+alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases && dotfiles'
 alias sourceal='source ~/.aliases'
 alias python=python3
 
