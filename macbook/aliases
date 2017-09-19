@@ -53,7 +53,7 @@ alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/
 alias weather='pywu fetch f967d21f73422db6 'Dearborn,MI' &&
 printf "Dearborn,Michigan\n" &&
 printf "" &&
-pywu forecast shortdate &&
+printf $(date | cut -c 1,2,3) && printf " " && pywu forecast shortdate &&
 printf "Current: " &&
 pywu current condition &&
 printf "Feels like: " &&
