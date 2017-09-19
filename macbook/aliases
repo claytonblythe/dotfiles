@@ -21,6 +21,7 @@ backup() { cp "$1"{,.bak}; }
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles/macbook'
+alias scripts='cd ~/github/scripts'
 alias dockerfiles='cd ~/github/dockerfiles'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
