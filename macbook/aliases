@@ -88,7 +88,7 @@ alias gs='git status'
 clone () { git clone https://github.com/claytonblythe/$1; }
 gcp () { git add --all && git commit -m "$1" && git push origin master; }
 toScript () { jupyter nbconvert --to script "$1"; }
-alias jn='jupyter notebook'
+alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
 
 ## sshing ##
 alias pi='ssh -p 44 pi@68.40.128.55'
