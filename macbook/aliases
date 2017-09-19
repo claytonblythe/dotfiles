@@ -103,6 +103,7 @@ alias sftposcar='sftp cblythe2@oscar.rotundact.ford.com'
 alias kermit='ssh cblythe2@19.48.13.198'
 alias sftpkermit='sftp cblythe2@19.48.13.198'
 alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
+alias smi='nvidia-smi'
 
 ## Docker Aliases ##
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
