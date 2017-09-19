@@ -125,6 +125,7 @@ alias dipl='docker inspect "docker ps -l -q"'
 dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+dsa () { docker start $1 && docker attach $1 ; }
 
 ## Blogging Aliases ##
 wkill ()
