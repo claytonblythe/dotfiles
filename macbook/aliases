@@ -19,7 +19,7 @@ alias diff='colordiff'
 backup() { cp "$1"{,.bak}; }
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
-alias dotfiles='cd ~/github/dotfiles'
+alias dotfiles='cd ~/github/dotfiles/macbook'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
 alias dl='cd ~/Downloads'
