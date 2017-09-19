@@ -11,6 +11,7 @@ alias ltr='ls -Art1 && echo "------Newest--"'
 mkcd () { mkdir -p "$1" && cd "$1"; }
 alias x='exit'
 alias c='clear'
+alias copy='xsel -ib'
 alias h='history'
 alias edit='vim'
 alias svi='sudo vim'
