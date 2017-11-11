@@ -65,7 +65,7 @@ alias news='open https://news.google.com/news/?ned=us&hl=en'
 alias github='open https://github.com/claytonblythe'
 
 ## Github ##
-alias newRepo='~/github/version_control/scripts/newRepo.sh'
+alias newepo='~/github/version_control/scripts/newRepo.sh'
 alias gp='git push origin master'
 alias gl='git log -n 10 --graph --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias gaa='git add --all'
