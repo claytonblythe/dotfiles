@@ -52,7 +52,7 @@ alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/
 
 ## Fun ## 
 alias weather='/home/cblythe2/github/scripts/weather.sh'
-alias weather_tomorrow='/home/claytonblythe/github/scripts/weather_tomorrow.sh'
+alias weather_tomorrow='/home/cblythe2/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
 alias fetch='/usr/bin/neofetch'
 alias mint='open https://mint.intuit.com/overview.event'
