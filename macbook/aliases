@@ -51,10 +51,13 @@ alias wifi='speedtest-cli --simple'
 alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ## 
-alias weather='/home/claytonblythe/github/scripts/weather.sh'
-alias weather_tomorrow='/home/claytonblythe/github/scripts/weather_tomorrow.sh'
+alias weather='/home/cblythe2/github/scripts/weather.sh'
+alias weather_tomorrow='/home/cblythe2/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
+<<<<<<< HEAD
 alias rsc='cd ~/github/redditstream-cli/code && python redditstream-cli.py -s'
+=======
+>>>>>>> 76e1862a2ce70933fcbf539a27dce4fdc61e4ca2
 alias fetch='/usr/bin/neofetch'
 alias mint='open https://mint.intuit.com/overview.event'
 alias linkedin='open https://www.linkedin.com/feed/'
@@ -65,7 +68,7 @@ alias news='open https://news.google.com/news/?ned=us&hl=en'
 alias github='open https://github.com/claytonblythe'
 
 ## Github ##
-alias newepo='~/github/version_control/scripts/newRepo.sh'
+alias newRepo='~/github/version_control/scripts/newRepo.sh'
 alias gp='git push origin master'
 alias gl='git log -n 10 --graph --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias gaa='git add --all'
@@ -83,7 +86,7 @@ alias pi='ssh -p 44 pi@68.40.128.55'
 alias pi3='ssh root@10.1.10.80'
 alias kodi='ssh root@10.1.10.42'
 alias mac='ssh claytonblythe@68.40.128.255'
-alias hd='ssh cblythe2@hpchdp2e.hpc.ford.com'
+alias hd2='ssh cblythe2@hpchdp2e.hpc.ford.com'
 alias sftphd='sftp cblythe2@hpchdp2e.hpc.ford.com'
 alias elmo='ssh cblythe2@elmo.rotundact.ford.com'
 alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
