@@ -21,9 +21,11 @@ alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles/macbook'
 alias dockerfiles='cd ~/github/dockerfiles'
+alias scripts='cd ~/github/scripts'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
 alias dl='cd ~/Downloads'
+alias lum='cd /Users/clayton.blythe/github/silvertech-lambda'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
@@ -51,9 +53,10 @@ alias wifi='speedtest-cli --simple'
 alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ## 
-alias weather='/home/cblythe2/github/scripts/weather.sh'
-alias weather_tomorrow='/home/cblythe2/github/scripts/weather_tomorrow.sh'
+alias weather='/Users/clayton.blythe/github/scripts/weather.sh'
+alias weather_tomorrow='/home/clayton.blythe/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
+alias fi='rtv --monochrome --ascii -s financialindependence'
 alias rsc='cd ~/github/redditstream-cli/code && python redditstream-cli.py -s'
 alias fetch='/usr/bin/neofetch'
 alias mint='open https://mint.intuit.com/overview.event'
@@ -122,6 +125,6 @@ wkill ()
 kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
  &> /dev/null
 }
-alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && /Users/claytonblythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://localhost:8000'
+alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://localhost:8000'
 alias blog='serve & dp'
-alias dpupdate='cd ~/github/deepython && make devserver & sleep 1.333 && aws s3 sync ~/github/deepython/output s3://deepython.com/ && /Users/claytonblythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
+alias dpupdate='cd ~/github/deepython && make devserver & sleep 1.333 && aws s3 sync ~/github/deepython/output s3://deepython.com/ && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
