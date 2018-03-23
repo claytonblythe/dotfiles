@@ -36,6 +36,8 @@ alias please='sudo $(history -p !!)'
 alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases && dotfiles'
 alias sourceal='source ~/.aliases'
 alias python=python3
+alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
+alias pylum='/Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda'
 
 ## Monitoring ##
 alias j='jobs -l'
