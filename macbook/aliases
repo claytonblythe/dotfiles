@@ -60,7 +60,7 @@ alias weather_tomorrow='/home/clayton.blythe/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
 alias fi='rtv --monochrome --ascii -s financialindependence'
 alias rsc='cd ~/github/redditstream-cli/code && python redditstream-cli.py -s'
-alias fetch='/usr/bin/neofetch'
+alias fetch='/usr/local/bin/neofetch'
 alias mint='open https://mint.intuit.com/overview.event'
 alias linkedin='open https://www.linkedin.com/feed/'
 alias economist='open https://www.economist.com/printedition/'
@@ -122,11 +122,11 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 dsa () { docker start $1 && docker attach $1 ; }
 
 ## Blogging Aliases ##
-wkill ()
-{
-kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
- &> /dev/null
-}
-alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://localhost:8000'
-alias blog='serve & dp'
-alias dpupdate='cd ~/github/deepython && make devserver & sleep 1.333 && aws s3 sync ~/github/deepython/output s3://deepython.com/ && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
+# wkill ()
+# {
+# kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
+ # &> /dev/null
+# }
+# alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://localhost:8000'
+# alias blog='serve & dp'
+# alias dpupdate='cd ~/github/deepython && make devserver & sleep 1.333 && aws s3 sync ~/github/deepython/output s3://deepython.com/ && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
