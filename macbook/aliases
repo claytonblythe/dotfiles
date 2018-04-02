@@ -8,6 +8,7 @@ alias mkdir='mkdir -pv'
 alias ll='ls -l -h'
 alias lt='ls -At1 && echo "-----------------Oldest--------------------"'
 alias ltr='ls -Art1 -l -h && echo "-----------Newest------------------"'
+alias df='df -h'
 mkcd () { mkdir -p "$1" && cd "$1"; }
 alias x='exit'
 alias c='clear'
