@@ -21,6 +21,7 @@ backup() { cp "$1"{,.bak}; }
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles/macbook'
+alias theia='cd ~/github/theia'
 alias dockerfiles='cd ~/github/dockerfiles'
 alias scripts='cd ~/github/scripts'
 alias droidlum='/Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/silvertech-android-family/' 
