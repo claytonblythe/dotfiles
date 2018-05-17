@@ -6,10 +6,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias mkdir='mkdir -pv'
 alias ll='ls -l -h'
-alias lt='ls -At1 && echo "-----------------Oldest--------------------"'
-alias ltr='ls -Art1 -l -h && echo "-----------Newest------------------"'
+alias lt='ls -At1 and  echo "-----------------Oldest--------------------"'
+alias ltr='ls -Art1 -l -h and  echo "-----------Newest------------------"'
 alias df='df -h'
-mkcd () { mkdir -p "$1" && cd "$1"; }
 alias x='exit'
 alias c='clear'
 alias h='history'
@@ -17,7 +16,6 @@ alias edit='vim'
 alias svi='sudo vim'
 alias vi='vim'
 alias diff='colordiff'
-backup() { cp "$1"{,.bak}; }
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
 alias dotfiles='cd ~/github/dotfiles/macbook'
@@ -34,11 +32,10 @@ alias lum='cd /Users/clayton.blythe/github/silvertech-lambda'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
-alias v='vim $1'
+alias v='vim $argv[1]'
 alias vimal='vim ~/.aliases'
-alias vdp='dp && cd .. && vim pelicanconf.py'
-alias please='sudo $(history -p !!)'
-alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases && dotfiles'
+alias vdp='dp and cd .. and  vim pelicanconf.py'
+alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases and  dotfiles'
 alias sourceal='source ~/.aliases'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
@@ -49,15 +46,11 @@ alias j='jobs -l'
 alias b='cd -'
 alias mem='top -o mem'
 alias cpu='top -o cpu'
-alias mytop='top -U $(whoami)'
-mcd() { mkdir -p "$1"; cd "$1"; } 
-cls() { cd "$1"; ls; }
-alias ps?='ps aux | grep'
 
 ## Networking ##
 alias myip='curl http://ifconfig.me/ip'
 alias wifi='speedtest-cli --simple'
-alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log && /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
+alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and  /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ## 
 alias weather='/Users/clayton.blythe/github/scripts/weather.sh'
@@ -68,7 +61,7 @@ alias rscfi='rsc financialindependence'
 alias sf='rtv --monochrome --ascii -s sanfrancisco'
 alias asksf='rtv --monochrome --ascii -s asksf'
 alias androiddev='rtv --monochrome --ascii -s androiddev'
-alias rsc='cd ~/github/redditstream-cli/code && python redditstream-cli.py -s'
+alias rsc='cd ~/github/redditstream-cli/code and  python redditstream-cli.py -s'
 alias fetch='/usr/local/bin/neofetch'
 alias mint='open https://mint.intuit.com/overview.event'
 alias linkedin='open https://www.linkedin.com/feed/'
@@ -86,10 +79,11 @@ alias gaa='git add --all'
 alias push='git push'
 alias pull='git pull'
 alias gs='git status'
-clone () { git clone https://github.com/claytonblythe/$1; }
-sclone () { git clone git@github.com:claytonblythe/; }
-gcp () { git add --all && git commit -m "$1" && git push origin master; }
-toScript () { jupyter nbconvert --to script "$1"; }
+
+function gcp 
+    git commit -m "$argv"g
+end
+
 alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
 
 ## sshing ##
@@ -109,33 +103,14 @@ alias sftpelmo='sftp cblythe2@elmo.rotundact.ford.com'
 alias smi='nvidia-smi'
 
 
-## Docker Aliases ##
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-dbu() { docker build -t=$1 .; }
 # Run interactive container, e.g., $dki base /bin/bash
 alias dki="docker run -i -t -P"
 # Get container IP
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 # Bash into running container
-dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 alias di='docker images'
 alias dpa='docker ps -a'
 alias dps='docker ps'
-alias dka='docker rm $(docker ps -a -q)'
 alias ct='docker ps -a'
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dipl='docker inspect "docker ps -l -q"'
-dbu() { docker build -t=$1 .; }
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
-dsa () { docker start $1 && docker attach $1 ; }
-
-## Blogging Aliases ##
-# wkill ()
-# {
-# kill $(lsof -i tcp:8000 | grep python3.6 | awk '{print $2}')
- # &> /dev/null
-# }
-# alias serve='wkill & cd ~/github/deepython && make devserver & sleep .8 && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://localhost:8000'
-# alias blog='serve & dp'
-# alias dpupdate='cd ~/github/deepython && make devserver & sleep 1.333 && aws s3 sync ~/github/deepython/output s3://deepython.com/ && /Users/clayton.blythe/github/version_control/scripts/closeDeepythonTabs.sh && open http://deepython.com.s3-website.us-east-2.amazonaws.com/'
