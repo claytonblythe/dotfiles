@@ -80,8 +80,9 @@ alias push='git push'
 alias pull='git pull'
 alias gs='git status'
 
-function gcp 
-    git commit -m "$argv"g
+function gcp -a commit_msg
+    git commit -m $commit_msg
+    git push origin master
 end
 
 alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
