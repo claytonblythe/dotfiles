@@ -110,5 +110,7 @@ alias dipl='docker inspect "docker ps -l -q"'
 
 # Terraform
 alias terranukeapply="terraform refresh; and terraform destroy -auto-approve; and terraform plan; and terraform apply -auto-approve"
+alias apply='terraform apply'
+alias plan='terraform plan'
 alias refresh="terraform refresh"
 alias fmt="terraform fmt"
