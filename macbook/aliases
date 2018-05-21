@@ -39,7 +39,7 @@ alias sourceal='source ~/.config/fish/conf.d/config.fish'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
 alias pylum='/Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda'
-alias redacteon='cd ~/github/redacteon-lambda'
+alias redacteon='cd ~/github/redacteon-lambda/terraform'
 alias pyredacteon='/Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda' 
 
 ## Monitoring ##
@@ -107,3 +107,8 @@ alias dps='docker ps'
 alias ct='docker ps -a'
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dipl='docker inspect "docker ps -l -q"'
+
+# Terraform
+alias terranukeapply="terraform refresh; and terraform destroy -auto-approve; and terraform plan; and terraform apply -auto-approve"
+alias refresh="terraform refresh"
+alias fmt="terraform fmt"
