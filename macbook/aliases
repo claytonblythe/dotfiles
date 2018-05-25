@@ -32,15 +32,26 @@ alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
 alias v='vim $argv[1]'
+alias clone='git clone https://github.com/claytonblythe/$argv[1]'
 alias vimal='vim ~/.config/fish/conf.d/config.fish'
 alias vdp='dp; and cd ..; and  vim pelicanconf.py'
 alias cpal='cp ~/.config/fish/conf.d/config.fish ~/github/dotfiles/macbook/aliases; and dotfiles'
 alias sourceal='source ~/.config/fish/conf.d/config.fish'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
-alias pylum='/Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda'
-alias redacteon='cd ~/github/redacteon-lambda/terraform'
-alias pyredacteon='/Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda' 
+alias redacteon="cd ~/github/redacteon-lambda/terraform"
+function pyredacteon
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda/ >/dev/null 2>&1 &
+end
+
+function pyredacteon
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/ >/dev/null 2>&1 &
+end
+
+function pylum
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda/ >/dev/null 2>&1 &
+end
+
 
 ## Monitoring ##
 alias j='jobs -l'
@@ -110,6 +121,7 @@ alias dipl='docker inspect "docker ps -l -q"'
 
 # Terraform
 alias terranukeapply="terraform refresh; and terraform destroy -auto-approve; and terraform plan; and terraform apply -auto-approve"
+alias nuke="terraform refresh; and terraform destroy -auto-approve"
 alias apply='terraform apply'
 alias plan='terraform plan'
 alias refresh="terraform refresh"
