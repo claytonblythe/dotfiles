@@ -21,7 +21,6 @@ alias dotfiles='cd ~/github/dotfiles/macbook'
 alias theia='cd ~/github/theia'
 alias dockerfiles='cd ~/github/dockerfiles'
 alias scripts='cd ~/github/scripts'
-alias droidlum='/Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/silvertech-android-family/' 
 alias droid='cd ~/github/silvertech-android-family'
 alias emulators='cd /Users/clayton.blythe/Library/Android/sdk/emulator'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
@@ -51,6 +50,11 @@ end
 function pylum
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda/ >/dev/null 2>&1 &
 end
+
+function droidlum
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-android-family/ >/dev/null 2>&1 &
+end
+
 
 
 ## Monitoring ##
