@@ -43,7 +43,7 @@ function pyredacteon
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda/ >/dev/null 2>&1 &
 end
 
-function pyredacteon
+function pytheia
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/ >/dev/null 2>&1 &
 end
 
