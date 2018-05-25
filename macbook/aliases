@@ -52,7 +52,7 @@ function pylum
 end
 
 function droidlum
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-android-family/ >/dev/null 2>&1 &
+    nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/silvertech-android-family/ >/dev/null 2>&1 &
 end
 
 
