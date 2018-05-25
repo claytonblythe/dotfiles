@@ -44,7 +44,7 @@ function pyredacteon
 end
 
 function pytheia
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/ >/dev/null 2>&1 &
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/video_face_detection >/dev/null 2>&1 &
 end
 
 function pylum
