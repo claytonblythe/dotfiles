@@ -55,6 +55,11 @@ function droidlum
     nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/silvertech-android-family/ >/dev/null 2>&1 &
 end
 
+function pytyche
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/tyche/ >/dev/null 2>&1 &
+end
+
+
 
 
 ## Monitoring ##
