@@ -51,6 +51,10 @@ function pylum
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda/ >/dev/null 2>&1 &
 end
 
+function pyatt
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/ccapp-py/ >/dev/null 2>&1 &
+end
+
 function droidlum
     nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/silvertech-android-family/ >/dev/null 2>&1 &
 end
