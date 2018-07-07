@@ -64,6 +64,10 @@ function pytyche
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/tyche/ >/dev/null 2>&1 &
 end
 
+function leetcode
+    open https://leetcode.com/problemset/all/; and jupyter notebook
+end
+
 
 
 
