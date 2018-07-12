@@ -65,7 +65,7 @@ function pytyche
 end
 
 function leetcode
-    open https://leetcode.com/problemset/all/; and jupyter notebook
+    open https://leetcode.com/problemset/all/; and cd ~/github/leetcode; and jupyter notebook & 
 end
 
 
