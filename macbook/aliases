@@ -17,6 +17,7 @@ alias vi='vim'
 alias diff='colordiff'
 alias g='cd ~/github'
 alias dp='cd ~/github/deepython/content'
+alias venmo='cd ~/github/venmo'
 alias dotfiles='cd ~/github/dotfiles/macbook'
 alias theia='cd ~/github/theia'
 alias dockerfiles='cd ~/github/dockerfiles'
@@ -40,6 +41,8 @@ alias sourceal='source ~/.config/fish/conf.d/config.fish'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
 alias redacteon="cd ~/github/redacteon-lambda/terraform"
+
+# Pycharm and Android Studio Aliases
 function pyredacteon
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda/ >/dev/null 2>&1 &
 end
@@ -48,27 +51,13 @@ function pytheia
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/video_face_detection >/dev/null 2>&1 &
 end
 
-function pylum
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/silvertech-lambda/ >/dev/null 2>&1 &
-end
-
 function pyatt
     nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/ccapp-py/ >/dev/null 2>&1 &
 end
 
-function droidlum
-    nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/silvertech-android-family/ >/dev/null 2>&1 &
+function droidatt 
+    nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/att/att-protech >/dev/null 2>&1 &
 end
-
-function pytyche
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/tyche/ >/dev/null 2>&1 &
-end
-
-function leetcode
-    open https://leetcode.com/problemset/all/; and cd ~/github/leetcode; and jupyter notebook & 
-end
-
-
 
 
 ## Monitoring ##
