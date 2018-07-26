@@ -15,20 +15,21 @@ alias edit='vim'
 alias svi='sudo vim'
 alias vi='vim'
 alias diff='colordiff'
-alias g='cd ~/github'
-alias dp='cd ~/github/deepython/content'
-alias venmo='cd ~/github/venmo'
-alias dotfiles='cd ~/github/dotfiles/macbook'
-alias theia='cd ~/github/theia'
-alias dockerfiles='cd ~/github/dockerfiles'
-alias scripts='cd ~/github/scripts'
-alias droid='cd ~/github/silvertech-android-family'
-alias att='cd ~/github/ccapp-py'
+alias g='cd ~/drive/github'
+alias d='cd ~/drive'
+alias dp='cd ~/drive/github/deepython/content'
+alias venmo='cd ~/drive/github/venmo'
+alias dotfiles='cd ~/drive/github/dotfiles/macbook'
+alias theia='cd ~/drive/github/theia'
+alias dockerfiles='cd ~/drive/github/dockerfiles'
+alias scripts='cd ~/drive/github/scripts'
+alias droid='cd ~/drive/github/silvertech-android-family'
+alias att='cd ~/drive/github/ccapp-py'
 alias emulators='cd /Users/clayton.blythe/Library/Android/sdk/emulator'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
-alias el='cd ~/github/elegantdp'
+alias el='cd ~/drive/github/elegantdp'
 alias dl='cd ~/Downloads'
-alias lum='cd /Users/clayton.blythe/github/silvertech-lambda'
+alias lum='cd /Users/clayton.blythe/drive/github/silvertech-lambda'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
@@ -36,27 +37,27 @@ alias v='vim $argv[1]'
 alias clone='git clone https://github.com/claytonblythe/$argv[1]'
 alias vimal='vim ~/.config/fish/conf.d/config.fish'
 alias vdp='dp; and cd ..; and  vim pelicanconf.py'
-alias cpal='cp ~/.config/fish/conf.d/config.fish ~/github/dotfiles/macbook/aliases; and dotfiles'
+alias cpal='cp ~/.config/fish/conf.d/config.fish ~/drive/github/dotfiles/macbook/aliases; and dotfiles'
 alias sourceal='source ~/.config/fish/conf.d/config.fish'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
-alias redacteon="cd ~/github/redacteon-lambda/terraform"
+alias redacteon="cd ~/drive/github/redacteon-lambda/terraform"
 
 # Pycharm and Android Studio Aliases
 function pyredacteon
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda/ >/dev/null 2>&1 &
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/drive/github/redacteon-lambda/ >/dev/null 2>&1 &
 end
 
 function pytheia
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/video_face_detection >/dev/null 2>&1 &
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/drive/github/theia/video_face_detection >/dev/null 2>&1 &
 end
 
 function pyatt
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/ccapp-py/ >/dev/null 2>&1 &
+    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/drive/github/ccapp-py/ >/dev/null 2>&1 &
 end
 
 function droidatt 
-    nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/att/att-protech >/dev/null 2>&1 &
+    nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/drive/github/att/att-protech >/dev/null 2>&1 &
 end
 
 
@@ -72,15 +73,15 @@ alias wifi='speedtest-cli --simple'
 alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and  /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ## 
-alias weather='/Users/clayton.blythe/github/scripts/weather.sh'
-alias weather_tomorrow='/Users/clayton.blythe/github/scripts/weather_tomorrow.sh'
+alias weather='/Users/clayton.blythe/drive/github/scripts/weather.sh'
+alias weather_tomorrow='/Users/clayton.blythe/drive/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
 alias fi='rtv --monochrome --ascii -s financialindependence'
 alias rscfi='rsc financialindependence'
 alias sf='rtv --monochrome --ascii -s sanfrancisco'
 alias asksf='rtv --monochrome --ascii -s asksf'
 alias androiddev='rtv --monochrome --ascii -s androiddev'
-alias rsc='cd ~/github/redditstream-cli/code; and python redditstream-cli.py -s'
+alias rsc='cd ~/drive/github/redditstream-cli/code; and python redditstream-cli.py -s'
 alias fetch='/usr/local/bin/neofetch'
 alias mint='open https://mint.intuit.com/overview.event'
 alias linkedin='open https://www.linkedin.com/feed/'
@@ -90,8 +91,8 @@ alias deepython.com='open https://deepython.com.s3-website.us-east-2.amazonaws.c
 alias news='open https://news.google.com/news/?ned=us&hl=en'
 alias github='open https://github.com/claytonblythe'
 
-## Github ##
-alias newRepo='~/github/version_control/scripts/newRepo.sh'
+## drive/github ##
+alias newRepo='~/drive/github/version_control/scripts/newRepo.sh'
 alias gp='git push origin master'
 alias gl='git log -n 10 --graph --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias gaa='git add --all'
