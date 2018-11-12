@@ -42,6 +42,8 @@ alias sourceal='source ~/.config/fish/conf.d/config.fish'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
 alias redacteon="cd ~/github/redacteon-lambda/terraform"
+alias gremlin="/Users/clayton.blythe/Downloads/apache-tinkerpop-gremlin-console-3.3.3/bin/gremlin.sh"
+alias neptune='cd ~/github/att-neptune'
 
 # Pycharm and Android Studio Aliases
 function pyredacteon
@@ -77,6 +79,7 @@ alias weather='/Users/clayton.blythe/github/scripts/weather.sh'
 alias weather_tomorrow='/Users/clayton.blythe/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
 alias fi='rtv --monochrome --ascii -s financialindependence'
+alias mexico='rtv --monochrome --ascii -s mexico'
 alias rscfi='rsc financialindependence'
 alias sf='rtv --monochrome --ascii -s sanfrancisco'
 alias asksf='rtv --monochrome --ascii -s asksf'
