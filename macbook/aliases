@@ -81,6 +81,7 @@ alias rtv='rtv --monochrome --ascii'
 alias fi='rtv --monochrome --ascii -s financialindependence'
 alias mexico='rtv --monochrome --ascii -s mexico'
 alias rscfi='rsc financialindependence'
+alias pbd="rtv -s plantbaseddiet"
 alias sf='rtv --monochrome --ascii -s sanfrancisco'
 alias asksf='rtv --monochrome --ascii -s asksf'
 alias androiddev='rtv --monochrome --ascii -s androiddev'
