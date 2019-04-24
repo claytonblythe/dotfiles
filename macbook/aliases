@@ -23,12 +23,8 @@ alias dotfiles='cd ~/github/dotfiles/macbook'
 alias theia='cd ~/github/theia'
 alias dockerfiles='cd ~/github/dockerfiles'
 alias scripts='cd ~/github/scripts'
-alias droid='cd ~/github/silvertech-android-family'
-alias att='cd ~/github/ccapp-py'
 alias alg='cd ~/github/algorithms'
-alias blythe='cd ~/github/blythe.dev'
 alias codealg='cd ~/github/algorithms; code .'
-alias np='cd /Users/clayton.blythe/github/notification-platform/ccapp-notification/com/asurion/ccapp/notification/api'
 alias emulators='cd /Users/clayton.blythe/Library/Android/sdk/emulator'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
@@ -48,23 +44,6 @@ alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
 alias redacteon="cd ~/github/redacteon-lambda/terraform"
 alias gremlin="/Users/clayton.blythe/Downloads/apache-tinkerpop-gremlin-console-3.3.3/bin/gremlin.sh"
 alias neptune='cd ~/github/att-neptune'
-
-# Pycharm and Android Studio Aliases
-function pyredacteon
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/redacteon-lambda/ >/dev/null 2>&1 &
-end
-
-function pytheia
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/theia/video_face_detection >/dev/null 2>&1 &
-end
-
-function pyatt
-    nohup /Applications/PyCharm.app/Contents/MacOS/pycharm ~/github/ccapp-py/ >/dev/null 2>&1 &
-end
-
-function droidatt 
-    nohup /Applications/Android\ Studio.app/Contents/MacOS/studio ~/github/att/att-protech >/dev/null 2>&1 &
-end
 
 
 ## Monitoring ##
