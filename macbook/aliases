@@ -25,11 +25,11 @@ alias dockerfiles='cd ~/github/dockerfiles'
 alias scripts='cd ~/github/scripts'
 alias alg='cd ~/github/algorithms'
 alias codealg='cd ~/github/algorithms; code .'
-alias emulators='cd /Users/clayton.blythe/Library/Android/sdk/emulator'
+alias emulators='cd /Users/claytonb/Library/Android/sdk/emulator'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 alias el='cd ~/github/elegantdp'
 alias dl='cd ~/Downloads'
-alias lum='cd /Users/clayton.blythe/github/silvertech-lambda'
+alias lum='cd /Users/claytonb/github/silvertech-lambda'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
@@ -42,7 +42,7 @@ alias sourceal='source ~/.config/fish/conf.d/config.fish'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
 alias redacteon="cd ~/github/redacteon-lambda/terraform"
-alias gremlin="/Users/clayton.blythe/Downloads/apache-tinkerpop-gremlin-console-3.3.3/bin/gremlin.sh"
+alias gremlin="/Users/claytonb/Downloads/apache-tinkerpop-gremlin-console-3.3.3/bin/gremlin.sh"
 alias neptune='cd ~/github/att-neptune'
 
 
@@ -58,8 +58,8 @@ alias wifi='speedtest-cli --simple'
 alias logspeed='date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and  /users/claytonblythe/anaconda3/bin/python3 /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ## 
-alias weather='/Users/clayton.blythe/github/scripts/weather.sh'
-alias weather_tomorrow='/Users/clayton.blythe/github/scripts/weather_tomorrow.sh'
+alias weather='/Users/claytonb/github/scripts/weather.sh'
+alias weather_tomorrow='/Users/claytonb/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
 alias fi='rtv --monochrome --ascii -s financialindependence'
 alias mexico='rtv --monochrome --ascii -s mexico'
@@ -86,11 +86,6 @@ alias gaa='git add --all'
 alias push='git push'
 alias pull='git pull'
 alias gs='git status'
-
-function gcp -a commit_msg
-    git commit -m $commit_msg
-    git push origin master
-end
 
 alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
 
