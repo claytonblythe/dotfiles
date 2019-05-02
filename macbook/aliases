@@ -35,15 +35,11 @@ alias l='ls'
 alias la='ls -lAh'
 alias v='vim $argv[1]'
 alias clone='git clone https://github.com/claytonblythe/$argv[1]'
-alias vimal='vim ~/.config/fish/conf.d/config.fish'
-alias vdp='dp; and cd ..; and  vim pelicanconf.py'
-alias cpal='cp ~/.config/fish/conf.d/config.fish ~/github/dotfiles/macbook/aliases; and dotfiles'
-alias sourceal='source ~/.config/fish/conf.d/config.fish'
+alias vimal='vim ~/.aliases'
+alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases && cd ~/github/dotfiles'
+alias sourceal='source ~/.aliases'
 alias python=python3
 alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'/
-alias redacteon="cd ~/github/redacteon-lambda/terraform"
-alias gremlin="/Users/claytonb/Downloads/apache-tinkerpop-gremlin-console-3.3.3/bin/gremlin.sh"
-alias neptune='cd ~/github/att-neptune'
 
 
 ## Monitoring ##
