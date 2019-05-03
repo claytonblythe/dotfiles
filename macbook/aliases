@@ -18,18 +18,10 @@ alias diff='colordiff'
 alias g='cd ~/github'
 alias d='cd ~/drive'
 alias dp='cd ~/github/deepython/content'
-alias venmo='cd ~/github/venmo'
 alias dotfiles='cd ~/github/dotfiles/macbook'
-alias theia='cd ~/github/theia'
-alias dockerfiles='cd ~/github/dockerfiles'
 alias scripts='cd ~/github/scripts'
-alias alg='cd ~/github/algorithms'
-alias codealg='cd ~/github/algorithms; code .'
-alias emulators='cd /Users/claytonb/Library/Android/sdk/emulator'
 alias cpwd='pwd|tr -d "\n"|pbcopy'
-alias el='cd ~/github/elegantdp'
 alias dl='cd ~/Downloads'
-alias lum='cd /Users/claytonb/github/silvertech-lambda'
 alias v='vim'
 alias l='ls'
 alias la='ls -lAh'
@@ -66,12 +58,7 @@ alias asksf='rtv --monochrome --ascii -s asksf'
 alias androiddev='rtv --monochrome --ascii -s androiddev'
 alias rsc='cd ~/github/redditstream-cli/code; and python redditstream-cli.py -s'
 alias fetch='/usr/local/bin/neofetch'
-alias mint='open https://mint.intuit.com/overview.event'
-alias linkedin='open https://www.linkedin.com/feed/'
-alias economist='open https://www.economist.com/printedition/'
 alias reddit='open https://www.reddit.com/'
-alias deepython.com='open https://deepython.com.s3-website.us-east-2.amazonaws.com'
-alias news='open https://news.google.com/news/?ned=us&hl=en'
 alias github='open https://github.com/claytonblythe'
 
 ## github ##
@@ -85,14 +72,6 @@ alias gs='git status'
 
 alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
 
-## sshing ##
-alias pi='ssh -p 44 pi@68.40.128.55'
-alias pi3='ssh root@10.1.10.80'
-alias kodi='ssh root@10.1.10.42'
-alias mac='ssh claytonblythe@68.40.128.255'
-alias smi='nvidia-smi'
-
-
 # Run interactive container, e.g., $dki base /bin/bash
 alias dki="docker run -i -t -P"
 # Get container IP
@@ -104,11 +83,3 @@ alias dps='docker ps'
 alias ct='docker ps -a'
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dipl='docker inspect "docker ps -l -q"'
-
-# Terraform
-alias terranukeapply="terraform refresh; and terraform destroy -auto-approve; and terraform plan; and terraform apply -auto-approve"
-alias nuke="terraform refresh; and terraform destroy -auto-approve"
-alias apply='terraform apply'
-alias plan='terraform plan'
-alias refresh="terraform refresh"
-alias fmt="terraform fmt"
