@@ -31,7 +31,7 @@ alias vimal='vim ~/.aliases'
 alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases && cd ~/github/dotfiles'
 alias sourceal='source ~/.aliases'
 alias python=python3
-alias pycharm='open /Applications/PyCharm\ CE.app/Contents/MacOS/pycharm'
+alias pycharm='open /Applications/PyCharm.app/Contents/MacOS/pycharm'
 
 ## Monitoring ##
 alias j='jobs -l'
@@ -65,17 +65,14 @@ alias newRepo='~/github/version_control/scripts/newRepo.sh'
 alias gp='git push origin master'
 alias gl='git log -n 10 --graph --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias gaa='git add --all'
-alias push='git push'
-alias pull='git pull'
 alias gs='git status'
+alias pull='git pull'
+alias push='git push'
 
 alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
 
 # Run interactive container, e.g., $dki base /bin/bash
 alias dki="docker run -i -t -P"
-# Get container IP
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-# Bash into running container
 alias di='docker images'
 alias dpa='docker ps -a'
 alias dps='docker ps'
