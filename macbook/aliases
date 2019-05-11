@@ -73,9 +73,24 @@ alias jn='jupyter notebook --ip=0.0.0.0 --port=8097'
 
 # Run interactive container, e.g., $dki base /bin/bash
 alias dki="docker run -i -t -P"
+alias dsa='docker stop $(docker ps -a -q)'
+alias drma='docker rm $(docker ps -a -q)'
+alias drmi='docker rmi $(docker images -q)'
 alias di='docker images'
 alias dpa='docker ps -a'
 alias dps='docker ps'
 alias ct='docker ps -a'
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dipl='docker inspect "docker ps -l -q"'
+
+# Terraform
+alias init="terraform init"
+alias plan="terraform plan"
+alias apply="terraform apply"
+alias destroy="terraform init && terraform destroy"
+alias nuke="terraform init && terraform destroy -auto-approve"
+
+# Git
+alias clone="~/github/scripts/clone_claytonblythe_repo.sh"
+function sclone () { git clone git@github.com:claytonblythe/; }
+function gcp () { git add --all && git commit -m "$1" && git push origin master; }
