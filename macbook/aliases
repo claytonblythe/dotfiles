@@ -92,5 +92,4 @@ alias nuke="terraform init && terraform destroy -auto-approve"
 
 # Git
 alias clone="~/github/scripts/clone_claytonblythe_repo.sh"
-function sclone () { git clone git@github.com:claytonblythe/; }
 function gcp () { git add --all && git commit -m "$1" && git push origin master; }
