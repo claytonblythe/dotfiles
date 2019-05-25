@@ -93,3 +93,7 @@ alias nuke="terraform init && terraform destroy -auto-approve"
 # Git
 alias clone="~/github/scripts/clone_claytonblythe_repo.sh"
 function gcp () { git add --all && git commit -m "$1" && git push origin master; }
+
+
+#Pycharm/IDE
+alias pycharm="python /Users/claytonb/github/scripts/pycharm_launcher.py"
