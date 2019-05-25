@@ -44,8 +44,8 @@ alias wifi='speedtest-cli --simple'
 alias logspeed='date >> /Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and /usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log and  /anaconda3/bin/python3 /Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speed_plotter.py &'
 
 ## Fun ## 
-alias weather='/github/scripts/weather.sh'
-alias weather_tomorrow='/github/scripts/weather_tomorrow.sh'
+alias weather='~/github/scripts/weather.sh'
+alias weather_tomorrow='~/github/scripts/weather_tomorrow.sh'
 alias rtv='rtv --monochrome --ascii'
 alias fi='rtv --monochrome --ascii -s financialindependence'
 alias mexico='rtv --monochrome --ascii -s mexico'
@@ -96,4 +96,4 @@ function gcp () { git add --all && git commit -m "$1" && git push origin master;
 
 
 #Pycharm/IDE
-alias pycharm="python /github/scripts/pycharm_launcher.py"
+alias pycharm="python ~/github/scripts/pycharm_launcher.py"
