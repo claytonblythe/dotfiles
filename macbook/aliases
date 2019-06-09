@@ -5,6 +5,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias mkdir='mkdir -pv'
 alias ll='ls -l -h'
+alias lwc='ls | wc'
 alias lt='ls -At1; and  echo "-----------------Oldest--------------------"'
 alias ltr='ls -Art1 -l -h; and  echo "-----------Newest------------------"'
 alias df='df -h'
@@ -30,7 +31,6 @@ alias clone='git clone https://github.com/claytonblythe/$argv[1]'
 alias vimal='vim ~/.aliases'
 alias cpal='cp ~/.aliases ~/github/dotfiles/macbook/aliases && cd ~/github/dotfiles'
 alias sourceal='source ~/.aliases'
-alias python=python3
 
 ## Monitoring ##
 alias j='jobs -l'
@@ -53,11 +53,11 @@ alias rscfi='rsc financialindependence'
 alias pbd="rtv -s plantbaseddiet"
 alias sf='rtv --monochrome --ascii -s sanfrancisco'
 alias asksf='rtv --monochrome --ascii -s asksf'
-alias androiddev='rtv --monochrome --ascii -s androiddev'
-alias rsc='cd ~/github/redditstream-cli/code; and python redditstream-cli.py -s'
+alias rsc='cd ~/github/redditstream-cli/code; python redditstream-cli.py -s'
 alias fetch='/usr/local/bin/neofetch'
 alias reddit='open https://www.reddit.com/'
 alias github='open https://github.com/claytonblythe'
+alias gcb='cd ~/github/google_calendar_background && ~/github/google_calendar_background/venv/bin/python ~/github/google_calendar_background/google_calendar_background.py'
 
 ## github ##
 alias newRepo='~/github/version_control/scripts/newRepo.sh'
@@ -97,3 +97,5 @@ function gcp () { git add --all && git commit -m "$1" && git push origin master;
 
 #Pycharm/IDE
 alias pycharm="python ~/github/scripts/pycharm_launcher.py"
+
+
