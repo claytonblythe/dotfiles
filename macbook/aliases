@@ -87,13 +87,14 @@ alias dipl='docker inspect "docker ps -l -q"'
 alias init="terraform init"
 alias plan="terraform plan"
 alias apply="terraform apply"
+alias autoapply="terraform apply -auto-approve"
 alias destroy="terraform init && terraform destroy"
 alias nuke="terraform init && terraform destroy -auto-approve"
 
 # Git
 alias clone="~/github/scripts/clone_claytonblythe_repo.sh"
 function gcp () { git add --all && git commit -m "$1" && git push origin master; }
-
+alias gcm="git checkout master"
 
 #Pycharm/IDE
 alias pycharm="python ~/github/scripts/pycharm_launcher.py"
